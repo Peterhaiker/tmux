@@ -5,8 +5,8 @@ tmux不是终端模拟器，不是命令解释器。它只是一个实现多窗�
 ## 快捷键  
 ### 会话  
 ```
-:new<CR> new session
 需要加<prefix>前缀
+:new session_name new session
 s  list session
 $  name session
 ```
@@ -30,10 +30,11 @@ x  kill pane
 + break pane into window
 z 最大化当前页面
 ```
-### Misc  
+### 系统指令  
 ```
-d detach
+d detach 断开当前会话
+r reload 强制重载当前会话
 t big clock显示时间
-? shortcuts
+? shortcuts显示快捷键帮助文档
 : prompt
 ```
