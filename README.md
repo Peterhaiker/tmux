@@ -9,6 +9,12 @@ tmux不是终端模拟器，不是命令解释器。它只是一个实现多窗�
 :new session_name new session
 s  list session
 $  name session
+下面的命令让你在shell中操纵tmux
+tmux ls   列出所有会话
+tmux a    恢复至上一次的会话
+tmux a -t foo 恢复名称为foo的会话，会话默认名称为数字
+tmux kill-session -t foo  删除名为foo的会话
+tmux kill-server  删除所有会话
 ```
 ### 窗口  
 ```
