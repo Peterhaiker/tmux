@@ -1,6 +1,6 @@
 # ~/.tmuxinator/project0.yml
 
-name: project0 
+name: project0
 root: ~/
 
 # Optional tmux socket
@@ -34,7 +34,7 @@ root: ~/
 startup_window: editor
 
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
-startup_pane: 3
+startup_pane: 2
 
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
@@ -44,11 +44,10 @@ startup_pane: 3
 
 windows:
   - editor:
-      layout: a444,140x45,0,0{63x45,0,0[63x13,0,0,1,63x31,0,14,4],76x45,64,0,3}
+      layout: 82a4,176x51,0,0{83x51,0,0,27,92x51,84,0,29}
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - top
         -
         -
